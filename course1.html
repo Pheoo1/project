@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h2 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .logout-link {
+            color: #ff0000;
+        }
+        main {
+            padding: 20px;
+        }
+        .course-detail {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .course-detail img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .course-detail h2 {
+            color: #333;
+        }
+        .course-detail ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .course-detail ul li {
+            margin-bottom: 10px;
+        }
+        .course-detail iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Welcome, {{ username }}!</h2>
+        <h1>Cybersecurity Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/logout" class="logout-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="course-detail">
+            <img src="https://wallpapers.com/images/hd/cyber-security-background-meuqfzxcg4gdd26s.jpg" alt="Basic Cybersecurity">
+            <h2>Basic Cybersecurity</h2>
+            <p>Learn the basics of cybersecurity and protect yourself online. Basic cybersecurity refers to the fundamental practices and strategies used to protect digital information, networks, and systems from unauthorized access, attacks, and damage. Here are key aspects of basic cybersecurity:</p>
+            <ul>
+                <li><strong>Authentication and Access Control</strong>:
+                    <ul>
+                        <li>Ensuring that only authorized users can access systems and data.</li>
+                        <li>Using strong, unique passwords and multi-factor authentication (MFA).</li>
+                    </ul>
+                </li>
+                <li><strong>Data Protection</strong>:
+                    <ul>
+                        <li>Encrypting sensitive information both in transit and at rest.</li>
+                        <li>Implementing data backup solutions to prevent loss from cyber incidents.</li>
+                    </ul>
+                </li>
+                <li><strong>Network Security</strong>:
+                    <ul>
+                        <li>Securing the network infrastructure with firewalls, intrusion detection systems (IDS), and virtual private networks (VPNs).</li>
+                        <li>Monitoring network traffic for unusual activity.</li>
+                    </ul>
+                </li>
+                <li><strong>Software and System Security</strong>:
+                    <ul>
+                        <li>Keeping software and systems updated with the latest security patches.</li>
+                        <li>Using anti-malware and antivirus programs to detect and prevent malicious software.</li>
+                    </ul>
+                </li>
+                <li><strong>User Education and Awareness</strong>:
+                    <ul>
+                        <li>Training users on recognizing phishing emails and other social engineering attacks.</li>
+                        <li>Promoting good cybersecurity hygiene, such as not sharing passwords and being cautious with unknown links and attachments.</li>
+                    </ul>
+                </li>
+                <li><strong>Incident Response</strong>:
+                    <ul>
+                        <li>Establishing a plan for responding to cybersecurity incidents, including identifying, containing, and mitigating attacks.</li>
+                        <li>Regularly testing and updating the incident response plan.</li>
+                    </ul>
+                </li>
+                <li><strong>Physical Security</strong>:
+                    <ul>
+                        <li>Protecting physical access to computers and networks.</li>
+                        <li>Ensuring that hardware like servers and network devices are stored in secure environments.</li>
+                    </ul>
+                </li>
+                <li><strong>Compliance and Legal Issues</strong>:
+                    <ul>
+                        <li>Adhering to relevant laws, regulations, and standards regarding data protection and cybersecurity.</li>
+                        <li>Understanding the legal implications of a data breach and the necessary steps for compliance.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Implementing these basic cybersecurity measures helps individuals and organizations reduce the risk of cyber threats and protect their digital assets from potential harm.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/njPY7pQTRWg?si=qhcJi1bqZa_1mpq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+   
+</body>
+</html>

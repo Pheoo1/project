@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h2 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .logout-link {
+            color: #ff0000;
+        }
+        main {
+            padding: 20px;
+        }
+        .mock-test {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .mock-test h2 {
+            color: #333;
+        }
+        .mock-test ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .mock-test ul li {
+            margin-bottom: 20px;
+        }
+        .mock-test button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .mock-test button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Welcome, {{ username }}!</h2>
+        <h1>Mock Test</h1>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/logout" class="logout-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="mock-test">
+            <h2>Mock Test</h2>
+            <form id="mockTestForm">
+                <ul>
+                    <li>
+                        <p>Question 1: What is the purpose of cybersecurity?</p>
+                        <input type="radio" id="q1a" name="q1" value="Protect digital information">
+                        <label for="q1a">Protect digital information</label><br>
+                        <input type="radio" id="q1b" name="q1" value="Create viruses">
+                        <label for="q1b">Create viruses</label><br>
+                        <input type="radio" id="q1c" name="q1" value="None of the above">
+                        <label for="q1c">None of the above</label>
+                    </li>
+                    <li>
+                        <p>Question 2: What is a firewall?</p>
+                        <input type="radio" id="q2a" name="q2" value="A hardware device for network routing">
+                        <label for="q2a">A hardware device for network routing</label><br>
+                        <input type="radio" id="q2b" name="q2" value="A security system that controls network traffic">
+                        <label for="q2b">A security system that controls network traffic</label><br>
+                        <input type="radio" id="q2c" name="q2" value="A type of malware">
+                        <label for="q2c">A type of malware</label>
+                    </li>
+                    <li>
+                        <p>Question 3: Which protocol is used to securely transfer files over the internet?</p>
+                        <input type="radio" id="q3a" name="q3" value="FTP">
+                        <label for="q3a">FTP</label><br>
+                        <input type="radio" id="q3b" name="q3" value="HTTP">
+                        <label for="q3b">HTTP</label><br>
+                        <input type="radio" id="q3c" name="q3" value="SFTP">
+                        <label for="q3c">SFTP</label>
+                    </li>
+                    <li>
+                        <p>Question 4: What does SQL injection exploit?</p>
+                        <input type="radio" id="q4a" name="q4" value="Web application vulnerabilities">
+                        <label for="q4a">Web application vulnerabilities</label><br>
+                        <input type="radio" id="q4b" name="q4" value="Network security flaws">
+                        <label for="q4b">Network security flaws</label><br>
+                        <input type="radio" id="q4c" name="q4" value="Operating system bugs">
+                        <label for="q4c">Operating system bugs</label>
+                    </li>
+                    <li>
+                        <p>Question 5: What is phishing?</p>
+                        <input type="radio" id="q5a" name="q5" value="A type of social engineering attack">
+                        <label for="q5a">A type of social engineering attack</label><br>
+                        <input type="radio" id="q5b" name="q5" value="A form of malware">
+                        <label for="q5b">A form of malware</label><br>
+                        <input type="radio" id="q5c" name="q5" value="A network protocol">
+                        <label for="q5c">A network protocol</label>
+                    </li>
+                    <li>
+                        <p>Question 6: What is a Denial-of-Service (DoS) attack?</p>
+                        <input type="radio" id="q6a" name="q6" value="An attack that prevents legitimate users from accessing a system">
+                        <label for="q6a">An attack that prevents legitimate users from accessing a system</label><br>
+                        <input type="radio" id="q6b" name="q6" value="An attack that steals data">
+                        <label for="q6b">An attack that steals data</label><br>
+                        <input type="radio" id="q6c" name="q6" value="An attack that damages hardware">
+                        <label for="q6c">An attack that damages hardware</label>
+                    </li>
+                    <li>
+                        <p>Question 7: What is the primary goal of ethical hacking?</p>
+                        <input type="radio" id="q7a" name="q7" value="To disrupt services">
+                        <label for="q7a">To disrupt services</label><br>
+                        <input type="radio" id="q7b" name="q7" value="To identify and fix security vulnerabilities">
+                        <label for="q7b">To identify and fix security vulnerabilities</label><br>
+                        <input type="radio" id="q7c" name="q7" value="To steal data">
+                        <label for="q7c">To steal data</label>
+                    </li>
+                    <li>
+                        <p>Question 8: What does VPN stand for?</p>
+                        <input type="radio" id="q8a" name="q8" value="Virtual Private Network">
+                        <label for="q8a">Virtual Private Network</label><br>
+                        <input type="radio" id="q8b" name="q8" value="Very Private Network">
+                        <label for="q8b">Very Private Network</label><br>
+                        <input type="radio" id="q8c" name="q8" value="Virtual Protected Network">
+                        <label for="q8c">Virtual Protected Network</label>
+                    </li>
+                    <li>
+                        <p>Question 9: What is the purpose of an IDS?</p>
+                        <input type="radio" id="q9a" name="q9" value="To detect and alert on potential security breaches">
+                        <label for="q9a">To detect and alert on potential security breaches</label><br>
+                        <input type="radio" id="q9b" name="q9" value="To filter spam emails">
+                        <label for="q9b">To filter spam emails</label><br>
+                        <input type="radio" id="q9c" name="q9" value="To block malicious websites">
+                        <label for="q9c">To block malicious websites</label>
+                    </li>
+                    <li>
+                        <p>Question 10: What does XSS stand for?</p>
+                        <input type="radio" id="q10a" name="q10" value="Cross-Site Scripting">
+                        <label for="q10a">Cross-Site Scripting</label><br>
+                        <input type="radio" id="q10b" name="q10" value="Cross-Site Software">
+                        <label for="q10b">Cross-Site Software</label><br>
+                        <input type="radio" id="q10c" name="q10" value="Cross-Site Security">
+                        <label for="q10c">Cross-Site Security</label>
+                    </li>
+                    <li>
+                        <p>Question 11: What is the main function of a proxy server?</p>
+                        <input type="radio" id="q11a" name="q11" value="To act as an intermediary for requests from clients seeking resources from other servers">
+                        <label for="q11a">To act as an intermediary for requests from clients seeking resources from other servers</label><br>
+                        <input type="radio" id="q11b" name="q11" value="To store passwords securely">
+                        <label for="q11b">To store passwords securely</label><br>
+                        <input type="radio" id="q11c" name="q11" value="To provide internet access">
+                        <label for="q11c">To provide internet access</label>
+                    </li>
+                    <li>
+                        <p>Question 12: What does DLP stand for in cybersecurity?</p>
+                        <input type="radio" id="q12a" name="q12" value="Data Loss Prevention">
+                        <label for="q12a">Data Loss Prevention</label><br>
+                        <input type="radio" id="q12b" name="q12" value="Data Link Protocol">
+                        <label for="q12b">Data Link Protocol</label><br>
+                        <input type="radio" id="q12c" name="q12" value="Digital Link Protection">
+                        <label for="q12c">Digital Link Protection</label>
+                    </li>
+                    <li>
+                        <p>Question 13: Which of the following is a strong password?</p>
+                        <input type="radio" id="q13a" name="q13" value="123456">
+                        <label for="q13a">123456</label><br>
+                        <input type="radio" id="q13b" name="q13" value="password">
+                        <label for="q13b">password</label><br>
+                        <input type="radio" id="q13c" name="q13" value="P@ssw0rd!23">
+                        <label for="q13c">P@ssw0rd!23</label>
+                    </li>
+                    <li>
+                        <p>Question 14: What is social engineering in cybersecurity?</p>
+                        <input type="radio" id="q14a" name="q14" value="Manipulating people into giving up confidential information">
+                        <label for="q14a">Manipulating people into giving up confidential information</label><br>
+                        <input type="radio" id="q14b" name="q14" value="Developing social media security">
+                        <label for="q14b">Developing social media security</label><br>
+                        <input type="radio" id="q14c" name="q14" value="Hacking social media accounts">
+                        <label for="q14c">Hacking social media accounts</label>
+                    </li>
+                    <li>
+                        <p>Question 15: What does WPA stand for in wireless security?</p>
+                        <input type="radio" id="q15a" name="q15" value="Wireless Protected Access">
+                        <label for="q15a">Wireless Protected Access</label><br>
+                        <input type="radio" id="q15b" name="q15" value="Wireless Private Access">
+                        <label for="q15b">Wireless Private Access</label><br>
+                        <input type="radio" id="q15c" name="q15" value="Wireless Public Access">
+                        <label for="q15c">Wireless Public Access</label>
+                    </li>
+                    <li>
+                        <p>Question 16: What is the main purpose of encryption?</p>
+                        <input type="radio" id="q16a" name="q16" value="To protect data by making it unreadable to unauthorized users">
+                        <label for="q16a">To protect data by making it unreadable to unauthorized users</label><br>
+                        <input type="radio" id="q16b" name="q16" value="To speed up data transmission">
+                        <label for="q16b">To speed up data transmission</label><br>
+                        <input type="radio" id="q16c" name="q16" value="To format data for storage">
+                        <label for="q16c">To format data for storage</label>
+                    </li>
+                    <li>
+                        <p>Question 17: What is a honeypot in cybersecurity?</p>
+                        <input type="radio" id="q17a" name="q17" value="A system designed to attract and trap attackers">
+                        <label for="q17a">A system designed to attract and trap attackers</label><br>
+                        <input type="radio" id="q17b" name="q17" value="A tool for encrypting data">
+                        <label for="q17b">A tool for encrypting data</label><br>
+                        <input type="radio" id="q17c" name="q17" value="A type of malware">
+                        <label for="q17c">A type of malware</label>
+                    </li>
+                    <li>
+                        <p>Question 18: What is the difference between TCP and UDP?</p>
+                        <input type="radio" id="q18a" name="q18" value="TCP is connection-oriented, UDP is connectionless">
+                        <label for="q18a">TCP is connection-oriented, UDP is connectionless</label><br>
+                        <input type="radio" id="q18b" name="q18" value="TCP is faster, UDP is slower">
+                        <label for="q18b">TCP is faster, UDP is slower</label><br>
+                        <input type="radio" id="q18c" name="q18" value="TCP is for internet, UDP is for local networks">
+                        <label for="q18c">TCP is for internet, UDP is for local networks</label>
+                    </li>
+                    <li>
+                        <p>Question 19: What is the function of a router in a network?</p>
+                        <input type="radio" id="q19a" name="q19" value="To connect multiple networks and route data between them">
+                        <label for="q19a">To connect multiple networks and route data between them</label><br>
+                        <input type="radio" id="q19b" name="q19" value="To amplify Wi-Fi signals">
+                        <label for="q19b">To amplify Wi-Fi signals</label><br>
+                        <input type="radio" id="q19c" name="q19" value="To store network data">
+                        <label for="q19c">To store network data</label>
+                    </li>
+                    <li>
+                        <p>Question 20: What is the purpose of a MAC address?</p>
+                        <input type="radio" id="q20a" name="q20" value="To uniquely identify a device on a network">
+                        <label for="q20a">To uniquely identify a device on a network</label><br>
+                        <input type="radio" id="q20b" name="q20" value="To provide internet access">
+                        <label for="q20b">To provide internet access</label><br>
+                        <input type="radio" id="q20c" name="q20" value="To encrypt network traffic">
+                        <label for="q20c">To encrypt network traffic</label>
+                    </li>
+                </ul>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    
+    <script>
+        document.getElementById('mockTestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let score = 0;
+            const correctAnswers = {
+                q1: 'Protect digital information',
+                q2: 'A security system that controls network traffic',
+                q3: 'SFTP',
+                q4: 'Web application vulnerabilities',
+                q5: 'A type of social engineering attack',
+                q6: 'An attack that prevents legitimate users from accessing a system',
+                q7: 'To identify and fix security vulnerabilities',
+                q8: 'Virtual Private Network',
+                q9: 'To detect and alert on potential security breaches',
+                q10: 'Cross-Site Scripting',
+                q11: 'To act as an intermediary for requests from clients seeking resources from other servers',
+                q12: 'Data Loss Prevention',
+                q13: 'P@ssw0rd!23',
+                q14: 'Manipulating people into giving up confidential information',
+                q15: 'Wireless Protected Access',
+                q16: 'To protect data by making it unreadable to unauthorized users',
+                q16: 'To protect data by making it unreadable to unauthorized users',
+                q17: 'A system designed to attract and trap attackers',
+                q18: 'TCP is connection-oriented, UDP is connectionless',
+                q19: 'To connect multiple networks and route data between them',
+                q20: 'To uniquely identify a device on a network'
+            };
+
+            const formElements = document.getElementById('mockTestForm').elements;
+            for (let i = 1; i <= 20; i++) {
+                const question = `q${i}`;
+                if (formElements[question].value === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `<p>Your score is: ${score}/20</p>`;
+            resultDiv.style.backgroundColor = '#e0ffe0';
+            resultDiv.style.padding = '10px';
+            resultDiv.style.borderRadius = '8px';
+            resultDiv.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+            resultDiv.style.maxWidth = '400px';
+            resultDiv.style.margin = '20px auto';
+        });
+    </script>
+</body>
+</html>

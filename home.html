@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Hub</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<style>
+    /* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 1rem;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+.course-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.course-detail img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+.course-detail h2 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.course-detail p {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylish button */
+.uiverse-button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(145deg, #ff8a00, #da1b60);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+.uiverse-button:hover {
+    background: linear-gradient(145deg, #da1b60, #ff8a00);
+    transform: scale(1.05);
+}
+
+.uiverse-button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 50px auto;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h2>Welcome, {{ username }}!</h2>
+        <h1>Cybersecurity Hub</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <!-- <li><a href="course1.html">Basic Cybersecurity</a></li>
+                <li><a href="course2.html">Networking</a></li>
+                <li><a href="course3.html">Ethical Hacking</a></li> -->
+                <li><a href="/logout" class="logout-link">Logout</a></li>
+                <li><a href="/mock_test" class="logout-link">Mock Test</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="course-detail">
+            <img src="https://wallpapers.com/images/hd/cyber-security-background-meuqfzxcg4gdd26s.jpg" alt="Basic Cybersecurity">
+            <h2>Basic Cybersecurity</h2>
+            <p>Description for Basic Cybersecurity</p>
+            <a href="/course1" class="uiverse-button">View Content</a>
+        </section>
+        <section class="course-detail">
+            <img src="https://e0.pxfuel.com/wallpapers/278/148/desktop-wallpaper-is-cyber-and-network-security-a-good-career.jpg" alt="Networking">
+            <h2>Networking</h2>
+            <p>Description for Networking</p>
+            <a href="/course2" class="uiverse-button">View Content</a>
+        </section>
+        <section class="course-detail">
+            <img src="https://wallpapercave.com/wp/wp11266079.jpg" alt="Ethical Hacking">
+            <h2>Ethical Hacking</h2>
+            <p>Description for Ethical Hacking</p>
+            <a href="/course3" class="uiverse-button">View Content</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cybersecurity Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
